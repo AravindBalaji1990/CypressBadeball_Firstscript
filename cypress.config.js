@@ -15,6 +15,15 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
+  reporter: 'cypress-mochawesome-reporter',
+  video: true,
+  screenshotOnRunFailure: true,
+  reporterOptions: {
+    charts: true,
+    reportPageTitle: 'Cypress Inline Reporter',
+    embeddedScreenshots: true, 
+    inlineAssets: true, //Adds the asserts inline
+  },
   e2e: {
     specPattern: "**/*.feature",
     setupNodeEvents

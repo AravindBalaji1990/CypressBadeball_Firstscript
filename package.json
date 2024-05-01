@@ -12,6 +12,11 @@
     "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
-    "cypress": "^13.8.1"
+    "cypress": "^13.8.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "multiple-cucumber-html-reporter": "^3.6.2"
+  },
+  "html":{
+    "enabled": true
   }
 }
